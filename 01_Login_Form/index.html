@@ -3,38 +3,57 @@
 
 <head>
     <title>Simple Login Form</title>
-    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="css/index.css">
+    <script src="./javascript/form-validation.js"></script>
 </head>
 
 <body bgcolor="gray">
     <div class="form-container">
-        <form action="submit_form.js" method="post">
+        <form action="/" id="form" method="post">
             <center><h2>Sign Up Here</h2></center>
-            <center><img src="login_icon.png" alt="" class="profile"></center>
+            <center><img src="img/login_icon.png" alt="" class="profile"></center>
 
-            <label for="name">Enter Name : </label>
-            <input type="text" name="name" id="01" placeholder="Enter your name" required>
-
-            <label for="bdate">Select your birthdate : </label>
-            <input type="date" name="bdate" id="02" required>
-
-            <label for="genders">Gender : </label>
-            <div class="gender_selection">
-                Male<input type="checkbox" name="gender" id="03" value="male">
-                Female<input type="checkbox" name="gender" id="04", value="female">
-                Other<input type="checkbox" name="gender" id="05", value="other">
+            <div class="input-control">
+                <label for="name">Enter Name : </label>
+                <input type="text" name="name" id="name" placeholder="Enter your name" required>
+                <div class="error"></div>
             </div>
 
-            <label for="mail">Enter E-mail id : </label>
-            <input type="text" name="mail" id="06" placeholder="Enter your email id" required>
+            <div class="input-control">
+                <label for="bdate">Select your birthdate : </label>
+                <input type="date" name="bdate" id="birthdate" required>
+                <div class="error"></div>
+            </div>
 
-            <label for="username">Enter username : </label>
-            <input type="text" name="uname" id="07" placeholder="Enter username" required>
+            <div class="input-control">
+                <label for="genders">Gender : </label>
+                <div class="gender_selection">
+                    Male<input type="checkbox" name="gender" id="male" value="male">
+                    Female<input type="checkbox" name="gender" id="female", value="female">
+                    Other<input type="checkbox" name="gender" id="other", value="other">
+                </div>
+                <div class="error"></div>
+            </div>
 
-            <label for="password">Enter password : </label>
-            <input type="password" name="passwd" id="08" placeholder="Enter password" required>
+            <div class="input-control">
+                <label for="mail">Enter E-mail id : </label>
+                <input type="text" name="mail" id="email" placeholder="Enter your email id" required>
+                <div class="error"></div>
+            </div>
 
-            <center><button onclick="window.location.href='submit_form.js'" id="signup_btn">
+            <div class="input-control">
+                <label for="username">Enter username : </label>
+                <input type="text" name="uname" id="username" placeholder="Enter username" required>
+                <div class="error"></div>
+            </div>
+
+            <div class="input-control">
+                <label for="password">Enter password : </label>
+                <input type="password" name="password" id="08" placeholder="Enter password" required>
+                <div class="error"></div>
+            </div>
+
+            <center><button onclick="window.location.href='./javascript/submit-form.js'" id="signup_btn">
                 Sign Up</button></center>
 
             <button type="reset" id="back_btn">Back</button>
