@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Simple Login Form</title>
+    <link rel="stylesheet" href="css/index.css">
+    <script src="./javascript/form-validation.js"></script>
+</head>
+
+<body bgcolor="gray">
+    <div class="form-container">
+        <form action="/" id="form" method="post">
+            <center><h2>Sign Up Here</h2></center>
+            <center><img src="img/login_icon.png" alt="" class="profile"></center>
+
+            <div class="input-control">
+                <label for="name">Enter Name : </label>
+                <input type="text" name="name" id="name" placeholder="Enter your name" required>
+                <div class="error"></div>
+            </div>
+
+            <div class="input-control">
+                <label for="bdate">Select your birthdate : </label>
+                <input type="date" name="bdate" id="birthdate" required>
+                <div class="error"></div>
+            </div>
+
+            <div class="input-control">
+                <label for="genders">Gender : </label>
+                <div class="gender_selection">
+                    Male<input type="checkbox" name="gender" id="male" value="male">
+                    Female<input type="checkbox" name="gender" id="female", value="female">
+                    Other<input type="checkbox" name="gender" id="other", value="other">
+                </div>
+                <div class="error"></div>
+            </div>
+
+            <div class="input-control">
+                <label for="mail">Enter E-mail id : </label>
+                <input type="text" name="mail" id="email" placeholder="Enter your email id" required>
+                <div class="error"></div>
+            </div>
+
+            <div class="input-control">
+                <label for="username">Enter username : </label>
+                <input type="text" name="uname" id="username" placeholder="Enter username" required>
+                <div class="error"></div>
+            </div>
+
+            <div class="input-control">
+                <label for="password">Enter password : </label>
+                <input type="password" name="password" id="08" placeholder="Enter password" required>
+                <div class="error"></div>
+            </div>
+
+            <center><button onclick="window.location.href='/'" id="signup_btn">
+                Sign Up</button></center>
+
+            <button type="reset" id="back_btn">Back</button>
+        </form>
+    </div>
+</body>
+
+</html>
