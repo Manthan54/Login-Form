@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Welcome</title>
+</head>
+<body>
+    <div class="container">
+        <h2 id="welcome"></h2>
+        <p id="gender"></p>
+        <p id="age"></p>
+    </div>
+    <script>
+        alert("Signed Up Successfully")
+        document.addEventListener('DOMContentLoaded', function(){
+            const name = localStorage.getItem('name');
+            const gender = localStorage.getItem('gender');
+            const birthdate = localStorage.getItem('birthdate');
+
+            const welcome = document.getElementById('welcome');
+            welcome.textContent = `Welcome ${name}`;
+
+            const genderInfo = document.getElementById('gender');
+            userInfo.textContent = `Gender : ${gender}`;
+
+            const ageInfo = document.getElementById('age');
+            userInfo.textContent = `Birthdate : ${birthdate}`;
+
+            //const userInfo = document.getElementById('userInfo');
+            //userInfo.textContent = `Name : ${name}\nGender : ${gender}\nBirthdate : ${birthdate}`;
+        });
+    </script>
+</body>
+</html>

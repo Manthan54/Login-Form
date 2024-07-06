@@ -15,7 +15,7 @@ body{
     border-radius: 50px;
 }
 
-.form-container{
+.container{
     width: 500px;
     margin: 0 auto;
     background-color: rgb(2, 104, 7);
@@ -24,17 +24,17 @@ body{
     border: 2px solid rgb(115, 115, 116);
 }
 
-/* form{
+form{
     display: flex;
     flex-direction: column;
-} */
+}
 
 h2{
     margin-bottom: 20px;
     text-align: center;
 }
 
-/* label{
+label{
     margin-bottom: 5px;
     font-weight: bold;
     padding-top: 10px;
@@ -52,7 +52,7 @@ input[type="password"]{
     border: 1px solid #ccc;
     border-radius: 4px;
     font-size: 16px;
-} */
+}
 
 #signup_btn
 {
@@ -76,7 +76,7 @@ input[type="password"]{
     font-size: 18px;
     font-weight: bold;
 }
-
+/* 
 #input-control{
     margin: 0 auto;
     width: 85%;
@@ -88,4 +88,4 @@ input[type="password"]{
     margin-bottom: 5px;
     font-weight: bold;
     padding-top: 10px;
-}
+} */
