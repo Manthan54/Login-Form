@@ -9,7 +9,7 @@
 
 <body bgcolor="gray">
     <div class="container">
-        <form id="loginForm" onsubmit="return validateForm()">
+        <form id="loginForm" method="post" onsubmit="return validateForm()">
             <center><h2>Sign Up Here</h2></center>
             <center><img src="img/login_icon.png" alt="" class="profile"></center>
             
@@ -54,8 +54,8 @@
                 <button type="reset" id="back_btn">Back</button>
             </form>
         </div>
-        <!-- <script src="./functions/submit-form.js"></script> -->
-        <script>
+        <script src="functions/form-validation.js"></script>
+        <!-- <script>
             function validateForm(){
                 const name = document.getElementById('name').value;
                 const gender = document.getElementById('gender').value;
@@ -73,7 +73,7 @@
                 window.location.href = 'welcome.html';
                 return false;
             }            
-        </script>
+        </script> -->
 </body>
 
 </html>

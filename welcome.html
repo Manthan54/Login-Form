@@ -6,8 +6,7 @@
 <body>
     <div class="container">
         <h2 id="welcome"></h2>
-        <p id="gender"></p>
-        <p id="age"></p>
+        <h5 id="info"></h5>
     </div>
     <script>
         alert("Signed Up Successfully")
@@ -19,11 +18,12 @@
             const welcome = document.getElementById('welcome');
             welcome.textContent = `Welcome ${name}`;
 
-            const genderInfo = document.getElementById('gender');
-            userInfo.textContent = `Gender : ${gender}`;
+            const Info = document.getElementById('info');
+            Info.textContent = `Gender : ${gender}
+                                Birthdate : ${birthdate}`;
 
-            const ageInfo = document.getElementById('age');
-            userInfo.textContent = `Birthdate : ${birthdate}`;
+            //const ageInfo = document.getElementById('age');
+            //age.textContent = `Birthdate : ${birthdate}`;
 
             //const userInfo = document.getElementById('userInfo');
             //userInfo.textContent = `Name : ${name}\nGender : ${gender}\nBirthdate : ${birthdate}`;
