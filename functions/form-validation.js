@@ -15,3 +15,6 @@ function validateForm(){
     window.location.href = 'welcome.html';
     return false;
 }
+
+document.getElementById('loginForm').addEventListener('submit', validateForm);
+
