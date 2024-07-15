@@ -1,20 +1,9 @@
-export function validateForm() {
-    const name = localStorage.getItem('name');
-    const gender = localStorage.getItem('gender');
-    const birthdate = localStorage.getItem('birthdate');
-  
-    const formData = {
-      name,
-      gender,
-      birthdate
-    };
-  
-    const jsonData = JSON.stringify(formData);
-    const blob = new Blob([jsonData], { type: 'application/json' });
-    const url = URL.createObjectURL(blob);
-    const link = document.createElement('a');
-    link.href = url;
-    link.download = 'form_data.json';
-    link.textContent = 'Download Form Data';
-    document.body.appendChild(link);
-  }
+import { validateForm } from 'validate.js';
+
+export async function onRequest(request) {
+  const formData = await request.formData();
+  const validationResults = validateForm(formData);
+  return new Response(JSON.stringify(validationResults), {
+    headers: { 'Content-Type': 'application/json' },
+  });
+}
